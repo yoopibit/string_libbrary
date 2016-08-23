@@ -1,10 +1,6 @@
 #include "my_string.h"
 
 #define my_abs(num) (num < 0) ? (-num) : (num)
-#if !defined(size_t) || !defined(NULL)
-#define size_t unsigned long
-#define NULL (0)
-#endif
 
 static int lenght_number(long number);
 
