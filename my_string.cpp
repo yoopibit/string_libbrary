@@ -14,11 +14,11 @@ char* long_to_str(long num, char* str, size_t lenght) {
     if (lenght <= current_lenght)
         return 0;
 
+    int compare_value = ((num < 0) ? 1 : 0);
     if (num < 0) {
         str[0] = '-';
         num = -num;
     }
-    int compare_value = ((num < 0) ? 1 : 0);
     
     for (i = current_lenght - 1; i >= compare_value; --i) {
         str[i] = '0' + num % 10;
